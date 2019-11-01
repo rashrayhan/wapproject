@@ -4,7 +4,7 @@
 }
 
 body{
-    width: 65%;
+    width: 75%;
     margin: 0 auto;
     text-align: center;
 }
@@ -117,6 +117,9 @@ footer p{
     border-top: 2px solid #000;
     text-align: left;
 }
+#bbc-head{
+    display: none;
+}
 #header-grid{
     display: grid;
     grid-template-columns: 50% 50%;
@@ -153,6 +156,7 @@ footer p{
     background-size: cover;
     color: #FFF;
     padding: 30% 5% 5% 2%;
+    border-radius: 5px;
 }
 #right-grid{
     display: grid;
@@ -163,6 +167,7 @@ footer p{
 #right-grid div{
     padding: 30% 5% 5% 2%;
     color: #FFF;
+    border-radius: 5px;
 }
 #right-grid div h3{
     font-size: 90%;
@@ -185,6 +190,24 @@ footer p{
     background-size: cover;
 }
 
+/*webform1*/
+.webform1-container{
+    border: 1px solid #DDD;
+    border-top: none;
+    padding-top: 30px;
+}
+/*webform2*/
+.wh-nav{
+    background: linear-gradient(120deg, #444, #0076B8, #555);
+}
+.wh-nav > div, div#navbarTogglerDemo01 > a, div#navbarTogglerDemo01 > ul li a{
+    color: #FFF;
+}
+.webform2-container form{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 20px;
+}
 @media only screen and (max-width: 600px) {
     body{
         width: 100%;

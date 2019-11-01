@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <title>Web form 2</title>
+</head>
+<body>
+    <header class="webform2-header">
+        <nav class="navbar navbar-expand-lg navbar-light wh-nav">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#">MUM Golden Dome Market:::SRM System</a>
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0" >
+                <li class="nav-item" >
+                    <a class="nav-link" href="#">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Suppliers</a>
+                </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <h6>Hello! &nbsp; &nbsp;</h6>
+                    <button class="btn btn-dark my-2 my-sm-0" type="submit">Logout</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <section class="container webform2-container">
+        <h3>New Product Form</h3>
+        <form class="container text-left col-12" novalidate>
+            <div class="form-container-left">
+                <div class="form-group">
+                    <label for="product" class="text-muted">Product name</label>
+                    <input type="text" class="form-control" id="product" >
+                </div>
+                <div class="form-group">
+                    <label for="name" class="text-muted">Name</label>
+                    <input type="text" class="form-control" id="name" >
+                </div>
+                    <div class="form-group">
+                    <label for="unit" class="text-muted">Unit Price</label>
+                    <input type="number" class="form-control" id="unit" placeholder="0.0">
+                </div>
+            </div>
+            <div class="form-contaier-right">
+                <div class="form-group">
+                    <label for="quantity" class="text-muted">Quantity in Stock</label>
+                    <input type="number" class="form-control" id="quantity" placeholder="0" >
+                </div>
+                <div class="form-group">
+                    <label for="supplier" class="text-muted">Supplier:</label>
+                    <select class="form-control" id="supplier" >
+                        <option value="#">Select a Supplier</option>
+                        <option value="1">Supplier 1</option>
+                        <option value="2">Supplier 2</option>
+                        <option value="3">Supplier 3</option>
+                        <option value="4">Supplier 4</option>
+                        <option value="5">Supplier 5</option>
+                    </select>
+                </div>
+                    <div class="form-group">
+                    <label for="dateSupplied" class="text-muted">Date supplied</label>
+                    <input type="date" class="form-control" id="dateSupplied" >
+                    <small id="dateHelp" class="form-text text-muted">Enter a valid Date.</small>
+                </div>
+                <div class="form-group text-right">
+                    <button type="reset" class="btn btn-outline-primary">Reset</button>
+                    <button type="button" class="btn btn-outline-warning ml-5 mr-5">Cancel</button>
+                    <button type="button" class="btn btn-outline-info">Add Product</button>
+                </div>
+               
+            </div>
+        </form>
+
+    </section>
+            
+    <footer>
+        <p>&copy; 2019. CS472 All rights reserved.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
