@@ -4,18 +4,17 @@
 function max (x, y) {
   if (x > y) {
     return 'max is: ' + x
-  } else {
-    return 'max is: ' + y
   }
+  return 'max is: ' + y
 }
 
 console.log(max(3, 4))
 
 // 2. function maxOfThree() that takes three numbers as arguments and returns the largest of them
 function maxOfThree (x, y, z) {
-  var numbers = [x, y, z]
-  var max = numbers[0]
-  for (var i = 1; i < numbers.length; i++) {
+  const numbers = [x, y, z]
+  let max = numbers[0]
+  for (let i = 1; i < numbers.length; i++) {
     if (max < numbers[i]) {
       max = numbers[i]
     }
@@ -37,9 +36,9 @@ console.log(isVowel('a'))
 
 // 4. function sum() and a function multiply()
 function sumMultiply (numbers) {
-  var sum = 0
-  var multiple = numbers[0]
-  for (var i = 0; i < numbers.length; i++) {
+  let sum = 0
+  let multiple = numbers[0]
+  for (let i = 0; i < numbers.length; i++) {
     sum += numbers[i]
     multiple *= numbers[i]
   }
@@ -50,8 +49,8 @@ console.log(sumMultiply([1, 2, 3, 4]))
 
 // 5. function reverse()
 function reverse (string) {
-  var reversed = []
-  for (var i = string.length - 1; i >= 0; i--) {
+  const reversed = []
+  for (let i = string.length - 1; i >= 0; i--) {
     reversed.push(string[i])
   }
   return reversed.join('')
@@ -65,9 +64,9 @@ console.log(reverse('hello world'))
 
 // 6. function findLongestWord()
 function findLongestWord (words) {
-  var longestWord = words[0]
-  var maxWordLength = 0
-  for (var i = 0; i < words.length; i++) {
+  let longestWord = words[0]
+  let maxWordLength = 0
+  for (let i = 0; i < words.length; i++) {
     if (maxWordLength < words[i].length) {
       maxWordLength = words[i].length
       longestWord = words[i]
@@ -82,7 +81,7 @@ console.log(findLongestWord(['The', 'quick', 'brown', 'fox', 'jumped', 'over', '
 function filterLongWords (words, i) {
   return words.filter(e => e.length > i)
 }
-var wor = ['The', 'quick', 'brown', 'fox', 'jumped', 'over', 'the', 'lazy', 'dog']
+const wor = ['The', 'quick', 'brown', 'fox', 'jumped', 'over', 'the', 'lazy', 'dog']
 console.log(filterLongWords(wor, 4))
 
 // 8. Array.reduce(…) function, re-implement your functions, sum(…) and multiply(…)
@@ -90,17 +89,17 @@ const reducer = (accumulator, currentValue) => accumulator + currentValue
 const reducerMultiple = (accumulator, currentValue) => accumulator * currentValue
 
 function sumMultiplyFunctional (numbers) {
-  var sum = numbers.reduce(reducer)
-  var multiply = numbers.reduce(reducerMultiple)
+  const sum = numbers.reduce(reducer)
+  const multiply = numbers.reduce(reducerMultiple)
   return 'sum of values: ' + sum + '\n\nmultiple of values: ' + multiply
 }
 console.log(sumMultiplyFunctional([1, 2, 3, 4]))
 
 // 9. function named findSecondBiggest
 function findSecondBiggest (numbers) {
-  var biggest, nextBiggest
+  let biggest, nextBiggest
   biggest = nextBiggest = 0
-  for (var i = 0; i < numbers.length; i++) {
+  for (let i = 0; i < numbers.length; i++) {
     if (biggest < numbers[i]) {
       nextBiggest = biggest
       biggest = numbers[i]
@@ -120,12 +119,20 @@ function printFibo (len, start1, start2) {
 
 console.log(printFibo(3, 0, 1))
 
+// 11. form values
+function loginFunction () {
+  const x = document.getElementById('exampleInputEmail1').value
+  const y = document.getElementById('exampleInputPassword1').value
+  const z = document.getElementById('exampleInputWebsite').value
+  document.alert(x + '\n' + y + '\n' + z)
+}
+
 // 12. Clock
 function startTime () {
-  var today = new Date()
-  var year = today.getFullYear()
-  var month = today.getMonth() + 1
-  var day = today.getDate()
-  var h = today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds()
+  const today = new Date()
+  const year = today.getFullYear()
+  const month = today.getMonth() + 1
+  const day = today.getDate()
+  const h = today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds()
   document.getElementById('clock').innerHTML = year + '-' + month + '-' + day + ' ' + h
 }
