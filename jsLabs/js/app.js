@@ -141,5 +141,5 @@ function startTime () {
   const day = today.getDate()
   const h = today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds()
   document.getElementById('clock').innerHTML = year + '-' + month + '-' + day + ' ' + h
-  //const t = setTimeout(startTime, 500);
+  const t = setTimeout(startTime, 500);
 }
