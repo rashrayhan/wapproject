@@ -85,12 +85,9 @@ const wor = ['The', 'quick', 'brown', 'fox', 'jumped', 'over', 'the', 'lazy', 'd
 console.log(filterLongWords(wor, 4))
 
 // 8. Array.reduce(…) function, re-implement your functions, sum(…) and multiply(…)
-const reducer = (accumulator, currentValue) => accumulator + currentValue
-const reducerMultiple = (accumulator, currentValue) => accumulator * currentValue
-
 function sumMultiplyFunctional (numbers) {
-  const sum = numbers.reduce(reducer)
-  const multiply = numbers.reduce(reducerMultiple)
+  const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue)
+  const multiply = numbers.reduce((accumulator, currentValue) => accumulator * currentValue)
   return 'sum of values: ' + sum + '\n\nmultiple of values: ' + multiply
 }
 console.log(sumMultiplyFunctional([1, 2, 3, 4]))
@@ -127,6 +124,15 @@ function loginFunction () {
   document.alert(x + '\n' + y + '\n' + z)
 }
 
+  const x = document.getElementById('mywebform1')
+  x.onsubmit = function () {
+    const x = document.getElementById('exampleInputEmail1').value
+    const y = document.getElementById('exampleInputPassword1').value
+    const z = document.getElementById('exampleInputWebsite').value
+    window.alert(x + '\n' + y + '\n' + z)
+  }
+
+
 // 12. Clock
 function startTime () {
   const today = new Date()
@@ -135,4 +141,5 @@ function startTime () {
   const day = today.getDate()
   const h = today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds()
   document.getElementById('clock').innerHTML = year + '-' + month + '-' + day + ' ' + h
+  //const t = setTimeout(startTime, 500);
 }
