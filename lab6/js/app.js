@@ -16,7 +16,7 @@ let loadData = (function (){
     }
 })
 
-window.addEventListener('load', loadData()); //IIFE
+window.addEventListener('load', loadData); //IIFE
 
 document.getElementById('registerForm').addEventListener('submit', function (event) {
     event.preventDefault()
