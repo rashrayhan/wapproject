@@ -70,7 +70,7 @@ let employee = ( function() {
 })();
 
 //11. Revealing module pattern extension with address fields and methods
-let employee = ( function() {
+let employee2 = ( function() {
     let name, age, salary, address
 
     function publicSetAge(newAge){
