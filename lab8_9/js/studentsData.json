@@ -1,0 +1,5 @@
+{
+    "student1": {"studentId": "000-98-0001", "firstName": "James" }, 
+    "student2": { "studentId": "000-98-0002", "firstName": "Anna" }, 
+    "student3":{ "studentId": "000-98-0003", "firstName": "Jeffrey" }
+}
